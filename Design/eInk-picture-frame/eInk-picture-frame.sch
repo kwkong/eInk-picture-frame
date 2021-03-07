@@ -14,58 +14,418 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT1
 U 1 1 60429EDB
-P 1200 1250
-F 0 "BT?" H 1318 1346 50  0000 L CNN
-F 1 "Battery_Cell" H 1318 1255 50  0000 L CNN
-F 2 "" V 1200 1310 50  0001 C CNN
-F 3 "~" V 1200 1310 50  0001 C CNN
-	1    1200 1250
+P 1350 4300
+F 0 "BT1" H 1468 4396 50  0000 L CNN
+F 1 "Battery_Cell" H 1468 4305 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_2460_1xAA" V 1350 4360 50  0001 C CNN
+F 3 "~" V 1350 4360 50  0001 C CNN
+	1    1350 4300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
-U 1 1 6042B621
-P 1200 1750
-F 0 "BT?" H 1318 1846 50  0000 L CNN
-F 1 "Battery_Cell" H 1318 1755 50  0000 L CNN
-F 2 "" V 1200 1810 50  0001 C CNN
-F 3 "~" V 1200 1810 50  0001 C CNN
-	1    1200 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery_Cell BT?
-U 1 1 6042BAFD
-P 1200 2250
-F 0 "BT?" H 1318 2346 50  0000 L CNN
-F 1 "Battery_Cell" H 1318 2255 50  0000 L CNN
-F 2 "" V 1200 2310 50  0001 C CNN
-F 3 "~" V 1200 2310 50  0001 C CNN
-	1    1200 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L kwkong_symbols:2N2222 Q?
+L kwkong_symbols:2N2222 Q1
 U 1 1 6042C207
-P 3800 1450
-F 0 "Q?" H 3990 1496 50  0000 L CNN
-F 1 "2N2222" H 3990 1405 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4000 1375 50  0001 L CIN
-F 3 "http://www.next.gr/components-datasheets/2N2222.pdf" H 3800 1450 50  0001 L CNN
-	1    3800 1450
+P 6150 1150
+F 0 "Q1" H 6340 1196 50  0000 L CNN
+F 1 "2N2222" H 6340 1105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6350 1075 50  0001 L CIN
+F 3 "http://www.next.gr/components-datasheets/2N2222.pdf" H 6150 1150 50  0001 L CNN
+	1    6150 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L RF_Module:ESP-12E U?
+L RF_Module:ESP-12E U1
 U 1 1 6042F1A7
 P 2700 2250
-F 0 "U?" H 2700 3231 50  0000 C CNN
+F 0 "U1" H 2700 3231 50  0000 C CNN
 F 1 "ESP-12E" H 2700 3140 50  0000 C CNN
 F 2 "RF_Module:ESP-12E" H 2700 2250 50  0001 C CNN
 F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 2350 2350 50  0001 C CNN
 	1    2700 2250
 	1    0    0    -1  
 $EndComp
+$Comp
+L kwkong_symbols:Push_button U3
+U 1 1 6043C7D8
+P 3450 1400
+F 0 "U3" H 3650 1665 50  0000 C CNN
+F 1 "BOOT" H 3650 1574 50  0000 C CNN
+F 2 "kwkong_footprints:6mm_momentary_switch_DIP" H 3650 1150 50  0001 C CNN
+F 3 "" H 3450 1400 50  0001 C CNN
+	1    3450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 6043CE21
+P 1350 4700
+F 0 "BT2" H 1468 4796 50  0000 L CNN
+F 1 "Battery_Cell" H 1468 4705 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_2460_1xAA" V 1350 4760 50  0001 C CNN
+F 3 "~" V 1350 4760 50  0001 C CNN
+	1    1350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT3
+U 1 1 6043D0A9
+P 1350 5100
+F 0 "BT3" H 1468 5196 50  0000 L CNN
+F 1 "Battery_Cell" H 1468 5105 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_2460_1xAA" V 1350 5160 50  0001 C CNN
+F 3 "~" V 1350 5160 50  0001 C CNN
+	1    1350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6043D690
+P 3400 1100
+F 0 "R2" H 3470 1146 50  0000 L CNN
+F 1 "10k" H 3470 1055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3330 1100 50  0001 C CNN
+F 3 "~" H 3400 1100 50  0001 C CNN
+	1    3400 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6043E320
+P 6350 2200
+F 0 "R1" H 6420 2246 50  0000 L CNN
+F 1 "10k" H 6420 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6280 2200 50  0001 C CNN
+F 3 "~" H 6350 2200 50  0001 C CNN
+	1    6350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6043E8BE
+P 3800 2750
+F 0 "R3" H 3870 2796 50  0000 L CNN
+F 1 "10k" H 3870 2705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3730 2750 50  0001 C CNN
+F 3 "~" H 3800 2750 50  0001 C CNN
+	1    3800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2550 3800 2550
+Wire Wire Line
+	3800 2550 3800 2600
+$Comp
+L power:GND #PWR?
+U 1 1 6044C0F0
+P 2700 3150
+F 0 "#PWR?" H 2700 2900 50  0001 C CNN
+F 1 "GND" H 2705 2977 50  0000 C CNN
+F 2 "" H 2700 3150 50  0001 C CNN
+F 3 "" H 2700 3150 50  0001 C CNN
+	1    2700 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3150 2700 2950
+$Comp
+L power:GND #PWR?
+U 1 1 6044CC56
+P 3800 3150
+F 0 "#PWR?" H 3800 2900 50  0001 C CNN
+F 1 "GND" H 3805 2977 50  0000 C CNN
+F 2 "" H 3800 3150 50  0001 C CNN
+F 3 "" H 3800 3150 50  0001 C CNN
+	1    3800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3150 3800 2900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6044D026
+P 2700 850
+F 0 "#PWR?" H 2700 700 50  0001 C CNN
+F 1 "+3.3V" H 2715 1023 50  0000 C CNN
+F 2 "" H 2700 850 50  0001 C CNN
+F 3 "" H 2700 850 50  0001 C CNN
+	1    2700 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 850  2700 1450
+$Comp
+L Device:R R?
+U 1 1 6044D9DD
+P 4300 1800
+F 0 "R?" H 4370 1846 50  0000 L CNN
+F 1 "100" H 4370 1755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 1800 50  0001 C CNN
+F 3 "~" H 4300 1800 50  0001 C CNN
+	1    4300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L kwkong_symbols:eInkDisplay_4.3in U?
+U 1 1 6044E528
+P 5100 2150
+F 0 "U?" H 5378 2171 50  0000 L CNN
+F 1 "eInkDisplay_4.3in" H 5378 2080 50  0000 L CNN
+F 2 "" H 4700 2450 50  0001 C CNN
+F 3 "https://www.waveshare.com/4.3inch-e-paper.htm" H 4700 2450 50  0001 C CNN
+	1    5100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6044F744
+P 900 1450
+F 0 "R?" H 970 1496 50  0000 L CNN
+F 1 "10k" H 970 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 830 1450 50  0001 C CNN
+F 3 "~" H 900 1450 50  0001 C CNN
+	1    900  1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6044F9BB
+P 900 1850
+F 0 "R?" H 970 1896 50  0000 L CNN
+F 1 "10k" H 970 1805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 830 1850 50  0001 C CNN
+F 3 "~" H 900 1850 50  0001 C CNN
+	1    900  1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6044FB39
+P 900 2250
+F 0 "R?" H 970 2296 50  0000 L CNN
+F 1 "10k" H 970 2205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 830 2250 50  0001 C CNN
+F 3 "~" H 900 2250 50  0001 C CNN
+	1    900  2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60452826
+P 1150 4000
+F 0 "#PWR?" H 1150 3850 50  0001 C CNN
+F 1 "+5V" H 1165 4173 50  0000 C CNN
+F 2 "" H 1150 4000 50  0001 C CNN
+F 3 "" H 1150 4000 50  0001 C CNN
+	1    1150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6045345D
+P 1150 4400
+F 0 "#PWR?" H 1150 4250 50  0001 C CNN
+F 1 "+3.3V" H 1165 4573 50  0000 C CNN
+F 2 "" H 1150 4400 50  0001 C CNN
+F 3 "" H 1150 4400 50  0001 C CNN
+	1    1150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60454945
+P 1350 5300
+F 0 "#PWR?" H 1350 5050 50  0001 C CNN
+F 1 "GND" H 1355 5127 50  0000 C CNN
+F 2 "" H 1350 5300 50  0001 C CNN
+F 3 "" H 1350 5300 50  0001 C CNN
+	1    1350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5300 1350 5200
+Wire Wire Line
+	1350 4900 1350 4800
+Wire Wire Line
+	1350 4500 1350 4450
+Wire Wire Line
+	1350 4100 1350 4050
+Wire Wire Line
+	1350 4050 1150 4050
+Wire Wire Line
+	1150 4050 1150 4000
+Wire Wire Line
+	1150 4400 1150 4450
+Wire Wire Line
+	1150 4450 1350 4450
+Connection ~ 1350 4450
+Wire Wire Line
+	1350 4450 1350 4400
+$Comp
+L power:GND #PWR?
+U 1 1 60459488
+P 900 3200
+F 0 "#PWR?" H 900 2950 50  0001 C CNN
+F 1 "GND" H 905 3027 50  0000 C CNN
+F 2 "" H 900 3200 50  0001 C CNN
+F 3 "" H 900 3200 50  0001 C CNN
+	1    900  3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  3200 900  2400
+Wire Wire Line
+	900  2100 900  2050
+Wire Wire Line
+	900  1700 900  1600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6045A82A
+P 900 850
+F 0 "#PWR?" H 900 700 50  0001 C CNN
+F 1 "+3.3V" H 915 1023 50  0000 C CNN
+F 2 "" H 900 850 50  0001 C CNN
+F 3 "" H 900 850 50  0001 C CNN
+	1    900  850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  850  900  1300
+Wire Wire Line
+	2100 2050 900  2050
+Connection ~ 900  2050
+Wire Wire Line
+	900  2050 900  2000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6045C3C7
+P 3400 850
+F 0 "#PWR?" H 3400 700 50  0001 C CNN
+F 1 "+3.3V" H 3415 1023 50  0000 C CNN
+F 2 "" H 3400 850 50  0001 C CNN
+F 3 "" H 3400 850 50  0001 C CNN
+	1    3400 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6045D38D
+P 2050 1100
+F 0 "R?" H 2120 1146 50  0000 L CNN
+F 1 "10k" H 2120 1055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1980 1100 50  0001 C CNN
+F 3 "~" H 2050 1100 50  0001 C CNN
+	1    2050 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kwkong_symbols:Push_button U?
+U 1 1 60460605
+P 1300 1400
+F 0 "U?" H 1500 1665 50  0000 C CNN
+F 1 "EN" H 1500 1574 50  0000 C CNN
+F 2 "kwkong_footprints:6mm_momentary_switch_DIP" H 1500 1150 50  0001 C CNN
+F 3 "" H 1300 1400 50  0001 C CNN
+	1    1300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1650 2050 1650
+Wire Wire Line
+	2050 1650 2050 1400
+$Comp
+L power:GND #PWR?
+U 1 1 6046E624
+P 1250 1550
+F 0 "#PWR?" H 1250 1300 50  0001 C CNN
+F 1 "GND" H 1255 1377 50  0000 C CNN
+F 2 "" H 1250 1550 50  0001 C CNN
+F 3 "" H 1250 1550 50  0001 C CNN
+	1    1250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1550 1250 1500
+Wire Wire Line
+	1250 1500 1300 1500
+$Comp
+L Device:R R?
+U 1 1 6046F5F0
+P 1750 1100
+F 0 "R?" H 1820 1146 50  0000 L CNN
+F 1 "10k" H 1820 1055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1680 1100 50  0001 C CNN
+F 3 "~" H 1750 1100 50  0001 C CNN
+	1    1750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1400 1750 1400
+Wire Wire Line
+	1750 1400 1750 1250
+Wire Wire Line
+	1750 950  1750 900 
+Wire Wire Line
+	2050 950  2050 900 
+Wire Wire Line
+	2050 900  1750 900 
+Connection ~ 1750 900 
+Wire Wire Line
+	1750 900  1750 850 
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6045D8ED
+P 1750 850
+F 0 "#PWR?" H 1750 700 50  0001 C CNN
+F 1 "+3.3V" H 1765 1023 50  0000 C CNN
+F 2 "" H 1750 850 50  0001 C CNN
+F 3 "" H 1750 850 50  0001 C CNN
+	1    1750 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1850 1900 1850
+Wire Wire Line
+	1900 1850 1900 1400
+Wire Wire Line
+	1900 1400 1750 1400
+Connection ~ 1750 1400
+Wire Wire Line
+	3300 1650 3400 1650
+Wire Wire Line
+	3400 1650 3400 1400
+Wire Wire Line
+	3400 1400 3450 1400
+$Comp
+L power:GND #PWR?
+U 1 1 6047689D
+P 3900 1550
+F 0 "#PWR?" H 3900 1300 50  0001 C CNN
+F 1 "GND" H 3905 1377 50  0000 C CNN
+F 2 "" H 3900 1550 50  0001 C CNN
+F 3 "" H 3900 1550 50  0001 C CNN
+	1    3900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1500 3900 1500
+Wire Wire Line
+	3900 1500 3900 1550
+Wire Wire Line
+	3400 1250 3400 1400
+Connection ~ 3400 1400
+Wire Wire Line
+	3400 950  3400 850 
+Text GLabel 3400 2650 2    50   Input ~ 0
+WAKE
+Wire Wire Line
+	3400 2650 3300 2650
+Text GLabel 2200 1400 2    50   Input ~ 0
+WAKE
+Wire Wire Line
+	2200 1400 2050 1400
+Connection ~ 2050 1400
+Wire Wire Line
+	2050 1400 2050 1250
 $EndSCHEMATC
