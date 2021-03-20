@@ -29,6 +29,6 @@ void setup()
 void loop()
 {
 	Serial.println("Going to sleep now");
-	delay(25);
-	LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF); 
+	delay(500);
+	//LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF); 
 }
