@@ -1,15 +1,13 @@
-﻿/*Begining of Auto generated code by Atmel studio */
-#include <Arduino.h>
+﻿
 
-/*End of auto generated code by Atmel studio */
 
 #include <Arduino.h>
+#include "epd.h"
 #include <LowPower.h>
 #include <SoftwareSerial.h>
-//Beginning of Auto generated function prototypes by Atmel Studio
-//End of Auto generated function prototypes by Atmel Studio
 
 #define F_CPU 8000000
+#define eink_EN 4
 
 unsigned long rxTimeout = 0;
 //SoftwareSerial loraSerial(2,3);
@@ -23,7 +21,33 @@ void setup()
   //loraSerial.begin(9600);
   Serial.begin(9600);
   Serial.println("init");
+ 
+  pinMode(eink_EN, OUTPUT);
+  
   delay(1000);
+  digitalWrite(eink_EN, HIGH);
+  delay(1000);
+  
+  
+    epd_clear();
+    epd_disp_bitmap("PIC4.BMP", 0, 0);
+    epd_udpate();
+    delay(5000);
+
+    epd_clear();
+    epd_disp_bitmap("PIC2.BMP", 0, 100);
+    epd_disp_bitmap("PIC3.BMP", 400, 100);
+    epd_udpate();
+    delay(5000);
+
+    epd_clear();
+    epd_disp_bitmap("PIC7.BMP", 0, 0);
+    epd_udpate();
+  
+  
+  delay(1000);
+  digitalWrite(eink_EN, LOW);
+
 }
 
 void loop()

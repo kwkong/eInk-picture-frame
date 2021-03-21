@@ -1,15 +1,17 @@
 Archive member included to satisfy reference by file (symbol)
 
 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                              Sketch.o (_ZN14HardwareSerial5beginEmh)
+                              epd.o (_ZN14HardwareSerial5writeEh)
 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                              Sketch.o (Serial)
+                              epd.o (Serial)
 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o (main)
 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
                               C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o) (_ZN5Print5writeEPKhj)
 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                              Sketch.o (delay)
+                              epd.o (delay)
+C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                              epd.o (pinMode)
 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
                               Sketch.o (_ZN6StringD1Ev)
 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
@@ -59,9 +61,9 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                              Sketch.o (__do_copy_data)
+                              epd.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                              LowPower.o (__do_clear_bss)
+                              epd.o (__do_clear_bss)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
                               Sketch.o (__do_global_ctors)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
@@ -99,7 +101,7 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
                               C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o) (strcmp)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                              C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o) (strcpy)
+                              epd.o (strcpy)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strncmp.o)
                               C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o) (strncmp)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strncpy.o)
@@ -160,6 +162,65 @@ Discarded input sections
 
  .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 epd.o
+ .data          0x00000000        0x0 epd.o
+ .bss           0x00000000        0x0 epd.o
+ .text._Z8epd_initii
+                0x00000000       0x2e epd.o
+ .text._Z9epd_reseti
+                0x00000000       0x38 epd.o
+ .text._Z10epd_wakeupi
+                0x00000000       0x38 epd.o
+ .text._Z15epd_disp_stringPKvii
+                0x00000000       0x70 epd.o
+ .text._Z13epd_disp_charhii
+                0x00000000       0x20 epd.o
+ .text._Z17epd_fill_triangleiiiiii
+                0x00000000       0x64 epd.o
+ .text._Z17epd_draw_triangleiiiiii
+                0x00000000       0x64 epd.o
+ .text._Z15epd_fill_circleiii
+                0x00000000       0x48 epd.o
+ .text._Z15epd_draw_circleiii
+                0x00000000       0x48 epd.o
+ .text._Z13epd_fill_rectiiii
+                0x00000000       0x4c epd.o
+ .text._Z13epd_draw_lineiiii
+                0x00000000       0x4c epd.o
+ .text._Z14epd_draw_pixelii
+                0x00000000       0x44 epd.o
+ .text._Z15epd_set_ch_fonth
+                0x00000000       0x3e epd.o
+ .text._Z15epd_set_en_fonth
+                0x00000000       0x3e epd.o
+ .text._Z13epd_set_colorhh
+                0x00000000       0x40 epd.o
+ .text._Z12epd_load_picv
+                0x00000000       0x26 epd.o
+ .text._Z13epd_load_fontv
+                0x00000000       0x26 epd.o
+ .text._Z19epd_screen_rotationh
+                0x00000000       0x3e epd.o
+ .text._Z18epd_enter_stopmodev
+                0x00000000       0x26 epd.o
+ .text._Z14epd_set_memoryh
+                0x00000000       0x3e epd.o
+ .text._Z13epd_read_baudv
+                0x00000000       0x26 epd.o
+ .text._Z12epd_set_baudl
+                0x00000000       0x72 epd.o
+ .text._Z13epd_handshakev
+                0x00000000       0x26 epd.o
+ .rodata._ZL13_cmd_load_pic
+                0x00000000        0x8 epd.o
+ .rodata._ZL14_cmd_load_font
+                0x00000000        0x8 epd.o
+ .rodata._ZL13_cmd_stopmode
+                0x00000000        0x8 epd.o
+ .rodata._ZL14_cmd_read_baud
+                0x00000000        0x8 epd.o
+ .rodata._ZL14_cmd_handshake
+                0x00000000        0x8 epd.o
  .text          0x00000000        0x0 LowPower.o
  .data          0x00000000        0x0 LowPower.o
  .bss           0x00000000        0x0 LowPower.o
@@ -267,6 +328,13 @@ Discarded input sections
  .text.millis   0x00000000       0x18 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .text.delayMicroseconds
                 0x00000000       0x16 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .text          0x00000000        0x0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .data          0x00000000        0x0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .bss           0x00000000        0x0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.digitalRead
+                0x00000000       0x52 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .progmem.data.port_to_input_PGM
+                0x00000000        0xa C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
  .group         0x00000000        0x8 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
  .text          0x00000000        0x0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
  .data          0x00000000        0x0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
@@ -895,7 +963,7 @@ Memory Configuration
 
 Name             Origin             Length             Attributes
 text             0x00000000         0x00008000         xr
-data             0x00800100         0x00000800         rw !x
+data             0x00800060         0x00000800         rw !x
 eeprom           0x00810000         0x00000400         rw !x
 fuse             0x00820000         0x00000003         rw !x
 lock             0x00830000         0x00000400         rw !x
@@ -907,6 +975,7 @@ Linker script and memory map
 
 Address of section .data set to 0x800100
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD epd.o
 LOAD LowPower.o
 LOAD Sketch.o
 START GROUP
@@ -921,8 +990,6 @@ LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/b
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5\libatmega328p.a
 END GROUP
-                0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
-                [0x00800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
                 [0x00008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
                 [0x00000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
                 [0x00000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
@@ -1021,7 +1088,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xd50
+.text           0x00000000     0x1086
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -1037,213 +1104,248 @@ END GROUP
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
-                0x00000068                . = ALIGN (0x2)
+ .progmem.data.digital_pin_to_timer_PGM
+                0x00000068       0x14 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000068                digital_pin_to_timer_PGM
+ .progmem.data.digital_pin_to_bit_mask_PGM
+                0x0000007c       0x14 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x0000007c                digital_pin_to_bit_mask_PGM
+ .progmem.data.digital_pin_to_port_PGM
+                0x00000090       0x14 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000090                digital_pin_to_port_PGM
+ .progmem.data.port_to_output_PGM
+                0x000000a4        0xa C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000a4                port_to_output_PGM
+ .progmem.data.port_to_mode_PGM
+                0x000000ae        0xa C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000000ae                port_to_mode_PGM
+                0x000000b8                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00000068                __ctors_start = .
+                0x000000b8                __ctors_start = .
  *(.ctors)
- .ctors         0x00000068        0x2 Sketch.o
- .ctors         0x0000006a        0x2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000006c                __ctors_end = .
-                0x0000006c                __dtors_start = .
+ .ctors         0x000000b8        0x2 Sketch.o
+ .ctors         0x000000ba        0x2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000000bc                __ctors_end = .
+                0x000000bc                __dtors_start = .
  *(.dtors)
- .dtors         0x0000006c        0x2 Sketch.o
-                0x0000006e                __dtors_end = .
+ .dtors         0x000000bc        0x2 Sketch.o
+                0x000000be                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000006e        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x0000006e                __init
+ .init0         0x000000be        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000be                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000006e        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init2         0x000000be        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x0000007a       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x0000007a                __do_copy_data
- .init4         0x00000090       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x00000090                __do_clear_bss
+ .init4         0x000000ca       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x000000ca                __do_copy_data
+ .init4         0x000000e0       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x000000e0                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x000000a0       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
-                0x000000a0                __do_global_ctors
+ .init6         0x000000f0       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x000000f0                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000000b6        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init9         0x00000106        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x000000be        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x000000be                __vector_22
-                0x000000be                __vector_1
-                0x000000be                __vector_24
-                0x000000be                __vector_12
-                0x000000be                __bad_interrupt
-                0x000000be                __vector_3
-                0x000000be                __vector_23
-                0x000000be                __vector_25
-                0x000000be                __vector_11
-                0x000000be                __vector_13
-                0x000000be                __vector_17
-                0x000000be                __vector_7
-                0x000000be                __vector_5
-                0x000000be                __vector_4
-                0x000000be                __vector_9
-                0x000000be                __vector_2
-                0x000000be                __vector_21
-                0x000000be                __vector_15
-                0x000000be                __vector_8
-                0x000000be                __vector_14
-                0x000000be                __vector_10
-                0x000000be                __vector_20
-                0x000000c2                . = ALIGN (0x2)
+ .text          0x0000010e        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x0000010e                __vector_22
+                0x0000010e                __vector_1
+                0x0000010e                __vector_24
+                0x0000010e                __vector_12
+                0x0000010e                __bad_interrupt
+                0x0000010e                __vector_3
+                0x0000010e                __vector_23
+                0x0000010e                __vector_25
+                0x0000010e                __vector_11
+                0x0000010e                __vector_13
+                0x0000010e                __vector_17
+                0x0000010e                __vector_7
+                0x0000010e                __vector_5
+                0x0000010e                __vector_4
+                0x0000010e                __vector_9
+                0x0000010e                __vector_2
+                0x0000010e                __vector_21
+                0x0000010e                __vector_15
+                0x0000010e                __vector_8
+                0x0000010e                __vector_14
+                0x0000010e                __vector_10
+                0x0000010e                __vector_20
+                0x00000112                . = ALIGN (0x2)
  *(.text.*)
+ .text._ZL7_verifyPKvi.constprop.0
+                0x00000112       0x1c epd.o
+ .text._ZL9_putcharsPKhi.constprop.1
+                0x0000012e       0x30 epd.o
+ .text._Z15epd_disp_bitmapPKvii
+                0x0000015e       0x70 epd.o
+                0x0000015e                _Z15epd_disp_bitmapPKvii
+ .text._Z9epd_clearv
+                0x000001ce       0x3c epd.o
+                0x000001ce                _Z9epd_clearv
+ .text._Z10epd_udpatev
+                0x0000020a       0x26 epd.o
+                0x0000020a                _Z10epd_udpatev
  .text.__vector_6
-                0x000000c2       0x2e LowPower.o
-                0x000000c2                __vector_6
- .text.setup    0x000000f0       0x2a Sketch.o
-                0x000000f0                setup
- .text.loop     0x0000011a       0x18 Sketch.o
-                0x0000011a                loop
+                0x00000230       0x2e LowPower.o
+                0x00000230                __vector_6
+ .text.setup    0x0000025e       0xca Sketch.o
+                0x0000025e                setup
+ .text.loop     0x00000328       0x18 Sketch.o
+                0x00000328                loop
  .text.startup._GLOBAL__sub_I_rxTimeout
-                0x00000132        0xc Sketch.o
+                0x00000340        0xc Sketch.o
  .text.exit._GLOBAL__sub_D_rxTimeout
-                0x0000013e        0x8 Sketch.o
+                0x0000034c        0x8 Sketch.o
  .text._ZN14HardwareSerial9availableEv
-                0x00000146       0x18 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000146                _ZN14HardwareSerial9availableEv
+                0x00000354       0x18 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000354                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x0000015e       0x1c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000015e                _ZN14HardwareSerial4peekEv
+                0x0000036c       0x1c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000036c                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x0000017a       0x28 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000017a                _ZN14HardwareSerial4readEv
+                0x00000388       0x28 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000388                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x000001a2       0x1e C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000001a2                _ZN14HardwareSerial17availableForWriteEv
+                0x000003b0       0x1e C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000003b0                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x000001c0       0x1c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000001c0                _Z14serialEventRunv
+                0x000003ce       0x1c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000003ce                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x000001dc       0x44 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000001dc                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x000003ea       0x44 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000003ea                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x00000220       0x9a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000220                _ZN14HardwareSerial5writeEh
+                0x0000042e       0x9a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000042e                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x000002ba       0x44 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000002ba                _ZN14HardwareSerial5flushEv
+                0x000004c8       0x44 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000004c8                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5beginEmh
-                0x000002fe       0xca C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000002fe                _ZN14HardwareSerial5beginEmh
+                0x0000050c       0xca C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000050c                _ZN14HardwareSerial5beginEmh
  .text.__vector_18
-                0x000003c8       0x64 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000003c8                __vector_18
+                0x000005d6       0x64 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000005d6                __vector_18
  .text.__vector_19
-                0x0000042c       0x4c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000042c                __vector_19
+                0x0000063a       0x4c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000063a                __vector_19
  .text._Z17Serial0_availablev
-                0x00000478       0x14 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00000478                _Z17Serial0_availablev
+                0x00000686       0x14 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000686                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x0000048c       0x5a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000069a       0x5a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x000004e6        0x2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
-                0x000004e6                initVariant
+                0x000006f4        0x2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+                0x000006f4                initVariant
  .text.startup.main
-                0x000004e8       0x1e C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
-                0x000004e8                main
+                0x000006f6       0x1e C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+                0x000006f6                main
  .text._ZN5Print5writeEPKhj
-                0x00000506       0x54 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000506                _ZN5Print5writeEPKhj
+                0x00000714       0x54 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000714                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x0000055a       0x2a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x0000055a                _ZN5Print5writeEPKc
+                0x00000768       0x2a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000768                _ZN5Print5writeEPKc
  .text._ZN5Print7printlnEv
-                0x00000584        0x8 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000584                _ZN5Print7printlnEv
+                0x00000792        0x8 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000792                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPKc
-                0x0000058c       0x24 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x0000058c                _ZN5Print7printlnEPKc
+                0x0000079a       0x24 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000079a                _ZN5Print7printlnEPKc
  .text.__vector_16
-                0x000005b0       0x94 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x000005b0                __vector_16
- .text.micros   0x00000644       0x4a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000644                micros
- .text.delay    0x0000068e       0x78 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x0000068e                delay
- .text.init     0x00000706       0x76 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000706                init
+                0x000007be       0x94 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x000007be                __vector_16
+ .text.micros   0x00000852       0x4a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000852                micros
+ .text.delay    0x0000089c       0x78 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x0000089c                delay
+ .text.init     0x00000914       0x76 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000914                init
+ .text.turnOffPWM
+                0x0000098a       0x52 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x000009dc       0x78 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000009dc                pinMode
+ .text.digitalWrite
+                0x00000a54       0x5e C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000a54                digitalWrite
  .text._ZN6StringD2Ev
-                0x0000077c       0x10 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
-                0x0000077c                _ZN6StringD2Ev
-                0x0000077c                _ZN6StringD1Ev
+                0x00000ab2       0x10 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+                0x00000ab2                _ZN6StringD2Ev
+                0x00000ab2                _ZN6StringD1Ev
  .text._ZN6String10invalidateEv
-                0x0000078c       0x24 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
-                0x0000078c                _ZN6String10invalidateEv
+                0x00000ac2       0x24 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+                0x00000ac2                _ZN6String10invalidateEv
  .text._ZN6String12changeBufferEj
-                0x000007b0       0x34 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
-                0x000007b0                _ZN6String12changeBufferEj
+                0x00000ae6       0x34 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+                0x00000ae6                _ZN6String12changeBufferEj
  .text._ZN6String7reserveEj
-                0x000007e4       0x38 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
-                0x000007e4                _ZN6String7reserveEj
+                0x00000b1a       0x38 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+                0x00000b1a                _ZN6String7reserveEj
  .text._ZN6String4copyEPKcj
-                0x0000081c       0x42 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
-                0x0000081c                _ZN6String4copyEPKcj
+                0x00000b52       0x42 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+                0x00000b52                _ZN6String4copyEPKcj
  .text._ZN6StringC2EPKc
-                0x0000085e       0x2a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
-                0x0000085e                _ZN6StringC2EPKc
-                0x0000085e                _ZN6StringC1EPKc
- .text.__empty  0x00000888        0x2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
-                0x00000888                yield
+                0x00000b94       0x2a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+                0x00000b94                _ZN6StringC2EPKc
+                0x00000b94                _ZN6StringC1EPKc
+ .text.__empty  0x00000bbe        0x2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+                0x00000bbe                yield
  .text.libgcc.div
-                0x0000088a       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x0000088a                __udivmodsi4
- .text.libgcc   0x000008ce        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x000008ce                __tablejump2__
+                0x00000bc0       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000bc0                __udivmodsi4
+ .text.libgcc   0x00000c04        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000c04                __tablejump2__
  .text.avr-libc
-                0x000008da      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x000008da                malloc
-                0x00000a0a                free
+                0x00000c10      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00000c10                malloc
+                0x00000d40                free
  .text.avr-libc
-                0x00000b1c      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
-                0x00000b1c                realloc
+                0x00000e52      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                0x00000e52                realloc
  .text.avr-libc
-                0x00000ca8       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x00000ca8                memcpy
+                0x00000fde       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00000fde                memcpy
  .text.avr-libc
-                0x00000cba        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                0x00000cba                strcpy
+                0x00000ff0        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x00000ff0                strcpy
  .text.libgcc.prologue
-                0x00000cc8       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x00000cc8                __prologue_saves__
+                0x00000ffe       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00000ffe                __prologue_saves__
  .text.libgcc.prologue
-                0x00000d00       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x00000d00                __epilogue_restores__
-                0x00000d36                . = ALIGN (0x2)
+                0x00001036       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00001036                __epilogue_restores__
+                0x0000106c                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000d36        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000d36                _exit
-                0x00000d36                exit
+ .fini9         0x0000106c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x0000106c                _exit
+                0x0000106c                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x00000d36       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                0x00000d36                __do_global_dtors
+ .fini6         0x0000106c       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x0000106c                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1256,11 +1358,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000d4c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00001082        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000d50                _etext = .
+                0x00001086                _etext = .
 
-.data           0x00800100       0x40 load address 0x00000d50
+.data           0x00800100       0x6c load address 0x00001086
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
@@ -1271,50 +1373,54 @@ END GROUP
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
+ .rodata._ZL11_cmd_update
+                0x00800106        0x8 epd.o
  .rodata.str1.1
-                0x00800106       0x18 Sketch.o
-                                 0x19 (size before relaxing)
+                0x0080010e       0x3c Sketch.o
+                                 0x3d (size before relaxing)
  .rodata._ZTV14HardwareSerial
-                0x0080011e       0x12 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0080011e                _ZTV14HardwareSerial
+                0x0080014a       0x12 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0080014a                _ZTV14HardwareSerial
  .rodata.str1.1
-                0x00800130        0xf C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0080015c        0xf C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  *(.gnu.linkonce.r*)
-                0x00800140                . = ALIGN (0x2)
- *fill*         0x0080013f        0x1 
-                0x00800140                _edata = .
-                0x00800140                PROVIDE (__data_end, .)
+                0x0080016c                . = ALIGN (0x2)
+ *fill*         0x0080016b        0x1 
+                0x0080016c                _edata = .
+                0x0080016c                PROVIDE (__data_end, .)
 
-.bss            0x00800140       0xb0
-                0x00800140                PROVIDE (__bss_start, .)
+.bss            0x0080016c      0x2b0
+                0x0080016c                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.message   0x00800140        0x6 Sketch.o
-                0x00800140                message
- .bss.Serial    0x00800146       0x9d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00800146                Serial
+ .bss._ZL9_cmd_buff
+                0x0080016c      0x200 epd.o
+ .bss.message   0x0080036c        0x6 Sketch.o
+                0x0080036c                message
+ .bss.Serial    0x00800372       0x9d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00800372                Serial
  .bss.timer0_fract
-                0x008001e3        0x1 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x0080040f        0x1 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x008001e4        0x4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x008001e4                timer0_millis
+                0x00800410        0x4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00800410                timer0_millis
  .bss.timer0_overflow_count
-                0x008001e8        0x4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x008001e8                timer0_overflow_count
+                0x00800414        0x4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00800414                timer0_overflow_count
  *(COMMON)
- COMMON         0x008001ec        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x008001ec                __brkval
-                0x008001ee                __flp
-                0x008001f0                PROVIDE (__bss_end, .)
-                0x00000d50                __data_load_start = LOADADDR (.data)
-                0x00000d90                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800418        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00800418                __brkval
+                0x0080041a                __flp
+                0x0080041c                PROVIDE (__bss_end, .)
+                0x00001086                __data_load_start = LOADADDR (.data)
+                0x000010f2                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008001f0        0x0
+.noinit         0x0080041c        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x008001f0                _end = .
-                0x008001f0                PROVIDE (__heap_start, .)
+                0x0080041c                _end = .
+                0x0080041c                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1353,20 +1459,23 @@ END GROUP
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x00000000       0x30
+.comment        0x00000000       0x60
  *(.comment)
- .comment       0x00000000       0x30 LowPower.o
+ .comment       0x00000000       0x30 epd.o
                                  0x31 (size before relaxing)
- .comment       0x00000030       0x31 Sketch.o
- .comment       0x00000030       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .comment       0x00000030       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .comment       0x00000030       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .comment       0x00000030       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .comment       0x00000030       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .comment       0x00000030       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
- .comment       0x00000030       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
- .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .comment       0x00000030       0x30 LowPower.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000060       0x31 Sketch.o
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .comment       0x00000060       0x31 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .comment       0x00000060       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .comment       0x00000060       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -1388,112 +1497,130 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x588
+.debug_aranges  0x00000000      0x6b8
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x50 LowPower.o
+                0x00000000       0xf8 epd.o
  .debug_aranges
-                0x00000050       0x38 Sketch.o
+                0x000000f8       0x50 LowPower.o
  .debug_aranges
-                0x00000088       0x68 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000148       0x38 Sketch.o
  .debug_aranges
-                0x000000f0       0x48 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000180       0x68 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
  .debug_aranges
-                0x00000138       0x30 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+                0x000001e8       0x48 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
  .debug_aranges
-                0x00000168      0x100 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000230       0x30 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
  .debug_aranges
-                0x00000268       0x48 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000260      0x100 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x000002b0      0x2b8 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+                0x00000360       0x48 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x00000568       0x20 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+                0x000003a8       0x38 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_aranges
+                0x000003e0      0x2b8 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_aranges
+                0x00000698       0x20 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xce59
+.debug_info     0x00000000     0xe7a3
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x81f LowPower.o
- .debug_info    0x00000e13     0x1455 Sketch.o
- .debug_info    0x00002268     0x1f64 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x000041cc     0x1b16 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x00005ce2      0x237 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_info    0x00005f19     0x28ff C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x00008818      0x2cb C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x00008ae3     0x4338 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
- .debug_info    0x0000ce1b       0x3e C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x000005f4     0x113d epd.o
+ .debug_info    0x00001731      0x81f LowPower.o
+ .debug_info    0x00001f50     0x1664 Sketch.o
+ .debug_info    0x000035b4     0x1f64 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x00005518     0x1b16 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x0000702e      0x237 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x00007265     0x28ff C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x00009b64      0x2cb C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x00009e2f      0x5fe C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x0000a42d     0x4338 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_info    0x0000e765       0x3e C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_abbrev   0x00000000     0x1f66
+.debug_abbrev   0x00000000     0x243b
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x24c LowPower.o
- .debug_abbrev  0x000007ee      0x31a Sketch.o
- .debug_abbrev  0x00000b08      0x4b7 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x00000fbf      0x3ce C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x0000138d      0x12d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_abbrev  0x000014ba      0x47a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x00001934      0x146 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00001a7a      0x4c2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
- .debug_abbrev  0x00001f3c       0x2a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x000005a2      0x36f epd.o
+ .debug_abbrev  0x00000911      0x24c LowPower.o
+ .debug_abbrev  0x00000b5d      0x325 Sketch.o
+ .debug_abbrev  0x00000e82      0x4b7 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00001339      0x3ce C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x00001707      0x12d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_abbrev  0x00001834      0x47a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00001cae      0x146 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00001df4      0x15b C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00001f4f      0x4c2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_abbrev  0x00002411       0x2a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_line     0x00000000     0x2eb2
+.debug_line     0x00000000     0x3ca4
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x134 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000134      0x5e9 LowPower.o
- .debug_line    0x0000071d      0x221 Sketch.o
- .debug_line    0x0000093e      0x4c4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x00000e02      0x28c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x0000108e      0x165 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_line    0x000011f3      0x685 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x00001878      0x299 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x00001b11     0x1360 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
- .debug_line    0x00002e71       0x41 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x00000134      0xb31 epd.o
+ .debug_line    0x00000c65      0x5e9 LowPower.o
+ .debug_line    0x0000124e      0x290 Sketch.o
+ .debug_line    0x000014de      0x4c4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x000019a2      0x28c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00001c2e      0x165 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x00001d93      0x685 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00002418      0x299 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x000026b1      0x252 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00002903     0x1360 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_line    0x00003c63       0x41 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_frame    0x00000000     0x1258
+.debug_frame    0x00000000     0x15f4
  *(.debug_frame)
- .debug_frame   0x00000000       0xcc LowPower.o
- .debug_frame   0x000000cc       0x54 Sketch.o
- .debug_frame   0x00000120      0x110 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x00000230       0xe0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x00000310       0x54 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_frame   0x00000364      0x3ac C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x00000710       0xc4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x000007d4      0xa60 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
- .debug_frame   0x00001234       0x24 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00000000      0x320 epd.o
+ .debug_frame   0x00000320       0xcc LowPower.o
+ .debug_frame   0x000003ec       0x54 Sketch.o
+ .debug_frame   0x00000440      0x110 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00000550       0xe0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x00000630       0x54 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_frame   0x00000684      0x3ac C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x00000a30       0xc4 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000af4       0x7c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000b70      0xa60 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_frame   0x000015d0       0x24 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_str      0x00000000     0x2696
+.debug_str      0x00000000     0x2b8d
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x5aa LowPower.o
+ .debug_str     0x00000208      0x73a epd.o
+                                0x7b3 (size before relaxing)
+ .debug_str     0x00000942      0x3f5 LowPower.o
                                 0x604 (size before relaxing)
- .debug_str     0x000007b2      0xcbf Sketch.o
-                                0xf1a (size before relaxing)
- .debug_str     0x00001471      0x820 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x00000d37      0xbc9 Sketch.o
+                                0xf8b (size before relaxing)
+ .debug_str     0x00001900      0x7df C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x161a (size before relaxing)
- .debug_str     0x00001c91       0x86 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x000020df       0x86 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x140d (size before relaxing)
- .debug_str     0x00001d17       0x37 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x00002165       0x37 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
                                 0x2b9 (size before relaxing)
- .debug_str     0x00001d4e      0x3ce C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x0000219c      0x3ce C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
                                0x1247 (size before relaxing)
- .debug_str     0x0000211c      0x15c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x0000256a      0x14a C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
                                 0x24f (size before relaxing)
- .debug_str     0x00002278      0x402 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_str     0x000026b4       0xc2 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                                0x2b4 (size before relaxing)
+ .debug_str     0x00002776      0x3fb C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
                                0x119a (size before relaxing)
- .debug_str     0x0000267a       0x1c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x00002b71       0x1c C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
                                 0x144 (size before relaxing)
 
-.debug_loc      0x00000000     0x6d96
+.debug_loc      0x00000000     0x8275
  *(.debug_loc)
- .debug_loc     0x00000000      0x5a3 LowPower.o
- .debug_loc     0x000005a3       0x16 Sketch.o
- .debug_loc     0x000005b9      0x4dc C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x00000a95      0x1b0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x00000c45     0x1c87 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x000028cc      0x28d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x00002b59     0x423d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_loc     0x00000000      0xee3 epd.o
+ .debug_loc     0x00000ee3      0x5a3 LowPower.o
+ .debug_loc     0x00001486       0x16 Sketch.o
+ .debug_loc     0x0000149c      0x4dc C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00001978      0x1b0 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x00001b28     0x1c87 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x000037af      0x28d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x00003a3c      0x5fc C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00004038     0x423d C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1513,17 +1640,19 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x578
+.debug_ranges   0x00000000      0x6a0
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x40 LowPower.o
- .debug_ranges  0x00000040       0x28 Sketch.o
- .debug_ranges  0x00000068       0x58 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_ranges  0x000000c0       0x38 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_ranges  0x000000f8       0x20 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_ranges  0x00000118      0x120 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_ranges  0x00000238       0x38 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x00000270      0x2f8 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
- .debug_ranges  0x00000568       0x10 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000000      0x100 epd.o
+ .debug_ranges  0x00000100       0x40 LowPower.o
+ .debug_ranges  0x00000140       0x28 Sketch.o
+ .debug_ranges  0x00000168       0x58 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x000001c0       0x38 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x000001f8       0x20 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_ranges  0x00000218      0x120 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000338       0x38 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000370       0x28 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000398      0x2f8 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(WString.o)
+ .debug_ranges  0x00000690       0x10 C:\Users\krist\DOCUME~1\MYPROJ~1\EINK-P~1\Firmware\8MHZ_L~1\ARDUIN~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
 .debug_macro
  *(.debug_macro)
