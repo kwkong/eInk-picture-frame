@@ -33,10 +33,8 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  ..\\..\ArduinoCore\include\core/Arduino.h \
- ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h .././epd.h \
- ..\\..\ArduinoCore\include\libraries\low-power/LowPower.h \
- ..\\..\ArduinoCore\include\libraries\SoftwareSerial/SoftwareSerial.h \
- ..\\..\ArduinoCore\include\core/Stream.h
+ ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h \
+ .././EEPROM.h .././LowPower.h .././epd.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
@@ -108,10 +106,8 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h:
 
+.././EEPROM.h:
+
+.././LowPower.h:
+
 .././epd.h:
-
-..\\..\ArduinoCore\include\libraries\low-power/LowPower.h:
-
-..\\..\ArduinoCore\include\libraries\SoftwareSerial/SoftwareSerial.h:
-
-..\\..\ArduinoCore\include\core/Stream.h:
