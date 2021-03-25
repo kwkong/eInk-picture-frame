@@ -4,7 +4,7 @@
 #include "epd.h"
 
 #define imageMaximum 75
-#define imageCounterAddress 0
+#define imageCounterAddress 1
 #define eink_EN 4
 
 int dayCounter = 0;
@@ -41,7 +41,7 @@ void displayImage()
 	int imageCounter = 0;
 	String imageName = "i";
 
-	/*
+	
 	EEPROM.get(imageCounterAddress, imageCounter);
 	imageCounter++;
 
@@ -52,22 +52,25 @@ void displayImage()
 
 	EEPROM.put(imageCounterAddress,imageCounter);
 
-	imageName += String(imageCounter);
+	imageName = String(imageCounter);
 	imageName += ".bmp";
 	epd_disp_bitmap(imageName.c_str(), 0, 0);
-	*/
-	
-	epd_disp_bitmap("i0.BMP", 0, 0);
-	
 	epd_udpate();
+	
+	//Serial.println(imageName);
 	delay(4000);
 	digitalWrite(eink_EN, LOW);
 }
 
 void restartCounter()
 {
+	for (int i = 0 ; i < EEPROM.length() ; i++) 
+	{
+		EEPROM.write(i, 0);
+	}
+	
 	int imageCounter = 0;
 	EEPROM.put(imageCounterAddress, imageCounter);
-	Serial.println("Comment this function out and restart device");
+	//Serial.println("Comment this function out and restart device");
 	while(1);
 }

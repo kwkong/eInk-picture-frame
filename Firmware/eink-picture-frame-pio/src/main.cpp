@@ -14,8 +14,8 @@ void restartCounter();
 void setup()
 {
 	Serial.begin(115200);
-	restartCounter();
-	epd_set_memory(MEM_TF);
+	// restartCounter();
+	// epd_set_memory(MEM_TF);
 	displayImage();
 }
 
@@ -46,12 +46,12 @@ void displayImage()
 
 	EEPROM.put(imageCounterAddress,imageCounter);
 
-	imageName += String(imageCounter);
+	imageName = String(imageCounter);
 	imageName += ".bmp";
-
-	epd_clear();
-	epd_disp_bitmap(imageName.c_str(), 0, 0);
-	epd_udpate();
+    Serial.println(imageName);
+	// epd_clear();
+	// epd_disp_bitmap(imageName.c_str(), 0, 0);
+	// epd_udpate();
 	delay(5000);
 }
 
