@@ -15,7 +15,7 @@ void setup()
 {
 	Serial.begin(115200);
 	// restartCounter();
-	// epd_set_memory(MEM_TF);
+	
 	displayImage();
 }
 
@@ -33,25 +33,27 @@ void loop()
 
 void displayImage()
 {
+    epd_set_memory(MEM_TF);
 	int imageCounter = 0;
 	String imageName = "i";
 
-	EEPROM.get(imageCounterAddress, imageCounter);
-	imageCounter++;
+	// EEPROM.get(imageCounterAddress, imageCounter);
+	// imageCounter++;
 
-	if(imageCounter > 75)
-	{
-		imageCounter = 0;
-	}
+	// if(imageCounter > 75)
+	// {
+	// 	imageCounter = 0;
+	// }
 
-	EEPROM.put(imageCounterAddress,imageCounter);
+	// EEPROM.put(imageCounterAddress,imageCounter);
 
 	imageName = String(imageCounter);
 	imageName += ".bmp";
-    Serial.println(imageName);
-	// epd_clear();
+    // Serial.println(imageName);
+	epd_clear();
 	// epd_disp_bitmap(imageName.c_str(), 0, 0);
-	// epd_udpate();
+	epd_disp_bitmap("gay.bmp", 0, 0);
+	epd_udpate();
 	delay(5000);
 }
 
@@ -59,6 +61,6 @@ void restartCounter()
 {
 	int imageCounter = 0;
 	EEPROM.put(imageCounterAddress, imageCounter);
-	Serial.println("Comment this function out and restart device");
+	// Serial.println("Comment this function out and restart device");
 	while(1);
 }

@@ -6,16 +6,30 @@
 #define imageMaximum 75
 #define imageCounterAddress 1
 #define eink_EN 4
+#define eink_DIN 2
+#define eink_DOUT 3
 
 int dayCounter = 0;
+unsigned long holdTimer = 0;
 
 void displayImage();
 void restartCounter();
 
 void setup()
 {
-	Serial.begin(115200);
 	//restartCounter();
+	pinMode(eink_DIN, INPUT_PULLUP);
+	if(!digitalRead(eink_DIN))
+	{
+		holdTimer = millis();
+		while(!digitalRead(eink_DIN));
+		
+		if((millis() - holdTimer) > 3000)
+		{
+			int imageCounter = 0;
+			EEPROM.put(imageCounterAddress,imageCounter);
+		}
+	}
 	displayImage();
 }
 
@@ -33,10 +47,12 @@ void loop()
 
 void displayImage()
 {
-	pinMode(eink_EN, OUTPUT);
-	digitalWrite(eink_EN, HIGH);
-	delay(3000);
-	epd_set_memory(MEM_TF);
+    pinMode(eink_EN, OUTPUT);
+    digitalWrite(eink_EN, HIGH);
+    delay(5000);
+
+    Serial.begin(115200);
+    epd_set_memory(MEM_TF);
 	
 	int imageCounter = 0;
 	String imageName = "i";
@@ -52,13 +68,14 @@ void displayImage()
 
 	EEPROM.put(imageCounterAddress,imageCounter);
 
-	imageName = String(imageCounter);
+	imageName += String(imageCounter);
 	imageName += ".bmp";
+	
+	
+	epd_clear();
 	epd_disp_bitmap(imageName.c_str(), 0, 0);
 	epd_udpate();
-	
-	//Serial.println(imageName);
-	delay(4000);
+	delay(15000);
 	digitalWrite(eink_EN, LOW);
 }
 
