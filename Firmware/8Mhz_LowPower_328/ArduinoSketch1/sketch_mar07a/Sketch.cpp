@@ -3,13 +3,13 @@
 #include "LowPower.h"
 #include "epd.h"
 
-#define imageMaximum 75
+#define imageMaximum 17
 #define imageCounterAddress 1
 #define eink_EN 4
 #define eink_DIN 2
 #define eink_DOUT 3
 
-int dayCounter = 0;
+unsigned long dayCounter = 0;
 unsigned long holdTimer = 0;
 
 void displayImage();
@@ -35,7 +35,7 @@ void setup()
 
 void loop()
 {
-	if(dayCounter > 10800)
+	if(dayCounter > 300000)
 	{
 		displayImage();
 		dayCounter = 0;
@@ -55,13 +55,13 @@ void displayImage()
     epd_set_memory(MEM_TF);
 	
 	int imageCounter = 0;
-	String imageName = "i";
+	String imageName = "o";
 
 	
 	EEPROM.get(imageCounterAddress, imageCounter);
 	imageCounter++;
 
-	if(imageCounter > 75)
+	if(imageCounter > imageMaximum)
 	{
 		imageCounter = 0;
 	}
